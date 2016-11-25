@@ -9,10 +9,9 @@ in
 }:
 
 pkgs.stdenv.mkDerivation rec {
-  name = "java-sandbox";
+  name = "vie-artificielle";
   env = pkgs.buildEnv { name = name; paths = buildInputs; };
   buildInputs = [
       pkgs.openjdk
-      pkgs.maven
   ];
 }
